@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/backgroundimage"
+        android:src="@drawable/hillsbackground"
+        android:scaleType="centerCrop"
+        android:alpha="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subhayan's Converter"
+            android:textSize="35dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="110dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempinput"
+            android:hint="Enter temperature"
+            android:layout_marginTop="75dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:inputType="numberSigned|numberDecimal"
+            android:textStyle="bold"
+            />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp">
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ctof"
+                android:text="Celsius -> Faherenheit"
+                android:layout_marginEnd="5dp"
+                android:textSize="20dp"
+                />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ftoc"
+                android:text="Fahrenheit -> Celsius"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/result"
+            android:text="Answer shows here"
+            android:layout_marginTop="40dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
